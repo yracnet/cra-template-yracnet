@@ -1,11 +1,11 @@
-import './YourApp.scss';
+import './MainApp.scss';
 import { Navbar } from '_/components/Navbar';
 import { Home } from './home';
 
-// Rename YourApp to [Project Name]App
-function YourApp() {
+// Rename MainApp to [Project Name]App
+function MainApp() {
   return (
-    <div className="YourApp">
+    <div className="MainApp">
       <Navbar name="Your App" />
       <div className="container my-2">
         <Home />
@@ -14,4 +14,4 @@ function YourApp() {
   );
 }
 
-export default YourApp;
+export default MainApp;

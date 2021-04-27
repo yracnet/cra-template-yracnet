@@ -24,4 +24,4 @@ This project use the jsconfig.json for declare src as root imports
 
 ## Favicon
 
-Generate your favicon on https://favicon.io/favicon-generator/ and change to */src/public/_/*
+Generate your favicon on https://favicon.io/favicon-generator/ and change to */src/public/icon/*
