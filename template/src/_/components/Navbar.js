@@ -3,8 +3,8 @@ import React from 'react'
 export const Navbar = ({ name }) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a className="navbar-brand" href="#">
-                <img src={process.env.PUBLIC_URL + '/_/android-chrome-192x192.png'}
+            <a className="navbar-brand" href="#none">
+                <img src={process.env.PUBLIC_URL + '/icon/android-chrome-192x192.png'}
                     width="30"
                     height="30"
                     className="d-inline-block align-top"
@@ -18,16 +18,16 @@ export const Navbar = ({ name }) => {
             <div className="collapse navbar-collapse" id="navbarColor01">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#none">Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Features</a>
+                        <a className="nav-link" href="#none">Features</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Pricing</a>
+                        <a className="nav-link" href="#none">Pricing</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
+                        <a className="nav-link" href="#none">About</a>
                     </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
