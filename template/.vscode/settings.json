@@ -1,11 +1,11 @@
 {
     "files.exclude": {
-        "node_modules": true,
-        ".eslintrc.json": true,
-        ".yarnrc": true,
+        "**/node_modules": true,
+        "**/.eslintrc.json": true,
+        "**/.yarnrc": true,
         "**/*.md": true,
-        "**/yarn.lock": true,
-        "build": false
+        "**/*.lock": true,
+        "**/build": false
     },
     "search.exclude": {
         "node_modules": true,
