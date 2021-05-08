@@ -1,28 +1,16 @@
-const createOnChange = (setState) => {
-    return ({ target }) => {
-        const { value, name } = target;
-        setState(state => {
-            state[name] = value;
-            return state;
-        })
-    }
-}
-
+import { createOnChange } from '_/handlers/onChange'
+import { createOnValidate } from '_/handlers/onValidate'
 
 export const useForm = (init, validate) => {
     const [state, setState] = useState(init);
-    const onChange = createOnChange(setState);
-    const onValidate = () => {
-        console.log('validate', validate);
-    }
+    const onChange = createOnChange(state, setState);
+    const onValidate = createOnValidate(validate);
     return [state, setState, onChange, onValidate]
 }
 
 export const createForm = (handler, validate) => {
     const [state, setState] = handler;
-    const onChange = createOnChange(setState);
-    const onValidate = () => {
-        console.log('validate', validate);
-    }
+    const onChange = createOnChange(state, setState);
+    const onValidate = createOnValidate(validate);
     return [state, setState, onChange, onValidate]
 }

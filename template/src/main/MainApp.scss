@@ -1,9 +1,11 @@
 // Icons
 @import "font-awesome/css/font-awesome.css";
 
-// Custom Bootstrap Colors
-@import "_/themes/variables.scss";
-@import "bootstrap/scss/bootstrap.scss";
+// Custom Bootstrap with colors
+@import "_/scss/bootstrap.scss";
 
-// Custom Rules
-@import "_/themes/custom.scss";
+// Custom Components
+@import "_/scss/bootstrap-extend.scss";
+
+// Custom Tester Template
+@import "./tester/index.scss";
