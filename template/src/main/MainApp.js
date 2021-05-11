@@ -5,12 +5,12 @@ import { Home } from './home';
 // Rename MainApp to [Project Name]App
 function MainApp() {
   return (
-    <div className="MainApp">
+    <>
       <Navbar name="Your App" />
-      <div className="container my-2">
+      <div className="container mt-container">
         <Home />
       </div>
-    </div>
+    </>
   );
 }
 
