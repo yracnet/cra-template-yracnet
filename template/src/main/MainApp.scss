@@ -2,7 +2,10 @@
 @import "font-awesome/css/font-awesome.css";
 
 // Custom Bootstrap with colors
-@import "_/scss/bootstrap.scss";
+@import "_/scss/bootstrap-variables.scss";
+@import "bootstrap/scss/bootstrap.scss";
+// Custom Bootstrap Components
+// @import "_/scss/bootstrap.scss";
 
 // Custom Components
 @import "_/scss/bootstrap-extend.scss";
